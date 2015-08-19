@@ -1,6 +1,6 @@
 var mongoose    = require('mongoose');
 var db          = mongoose.createConnection('mongodb://dbuser:Xd5MA89z@ds035333.mongolab.com:35333/tom19');
-var PollsSchema = require('../models/Polls.js').PollsSchema;
+var PollsSchema = require('../models/polls.js').PollsSchema;
 var Polls       = db.model('polls', PollsSchema);
 
 exports.index = function(req, res) {

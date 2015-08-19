@@ -7,8 +7,8 @@ var app     = express();
 var server  = http.createServer(app);
 var io      = require('socket.io').listen(server);
 
-app.set('port', process.env.OPENSHIFT_NODEJS_PORT || 8080);
-app.set('host', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
+app.set('port', (process.env.PORT || 5000));
+app.set('host', (process.env.HOST || '127.0.0.1'));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(express.favicon(path.join(__dirname,'public','favicon.ico')));

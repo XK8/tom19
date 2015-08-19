@@ -1,25 +1,9 @@
-/*
 var mongoose    = require('mongoose');
-
-var db           = mongoose.createConnection('mongodb://dbuser:Xd5MA89z@ds035333.mongolab.com:35333/tom19');
+var db          = mongoose.createConnection('mongodb://dbuser:Xd5MA89z@ds035333.mongolab.com:35333/tom19');
 var PollsSchema = require('../models/Polls.js').PollsSchema;
-var Polls        = db.model('polls', PollsSchema);
-
-*/
+var Polls       = db.model('polls', PollsSchema);
 
 exports.index = function(req, res) {
-    var mongoose = require('mongoose');
-    mongoose.connect('mongodb://dbuser:Xd5MA89z@ds035333.mongolab.com:35333/tom19');
-
-    var Cat = mongoose.model('Cat', { name: String });
-
-    var kitty = new Cat({ name: 'Zildjian' });
-    kitty.save(function (err) {
-        if (err) console.log('meow1');
-    });
-};
-
-exports.index2 = function(req, res) {
 	res.render('index');
 };
 

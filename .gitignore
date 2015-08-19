@@ -1,9 +1,4 @@
-node_modules/*
-config.js
-.nodemonignore
-.sass-cache
-.tmp
-
-# IDE specific
-*.iml
-.idea
+node_modules
+.env
+Dockerfile
+docker-compose.yml

@@ -1,7 +1,7 @@
 /*
 var mongoose    = require('mongoose');
 
-var db           = mongoose.createConnection('mongodb://dbuser:XdMA89z@ds035333.mongolab.com:35333/tom19');
+var db           = mongoose.createConnection('mongodb://dbuser:Xd5MA89z@ds035333.mongolab.com:35333/tom19');
 var PollsSchema = require('../models/Polls.js').PollsSchema;
 var Polls        = db.model('polls', PollsSchema);
 
@@ -9,7 +9,7 @@ var Polls        = db.model('polls', PollsSchema);
 
 exports.index = function(req, res) {
     var mongoose = require('mongoose');
-    mongoose.connect('mongodb://dbuser:XdMA89z@ds035333.mongolab.com:35333/tom19');
+    mongoose.connect('mongodb://dbuser:Xd5MA89z@ds035333.mongolab.com:35333/tom19');
 
     var Cat = mongoose.model('Cat', { name: String });
 

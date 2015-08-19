@@ -35,5 +35,6 @@ io.sockets.on('connection', routes.vote);
 
 server.listen(app.get('port'), app.get('host'), function(){
 //  console.log('App running on '+ app.get('host') + ':' + app.get('port'));
+  console.dir(process.env);
   console.log('App running !!!');
 });

@@ -15,7 +15,7 @@ exports.index = function(req, res) {
 
     var kitty = new Cat({ name: 'Zildjian' });
     kitty.save(function (err) {
-        if (err) console.log('meow');
+        if (err) console.log('meow1');
     });
 };
 

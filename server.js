@@ -10,8 +10,8 @@ var io      = require('socket.io').listen(server);
 app.set('port', (process.env.PORT || 5000));
 //app.set('host', (process.env.HOST || '127.0.0.1'));
 
-app.set('views', __dirname, '/views');
 app.set('view engine', 'jade');
+app.set('views', __dirname + '/views');
 
 app.use(express.static(__dirname + '/public'));
 app.use(express.favicon(__dirname +'/public/favicon.ico'));
